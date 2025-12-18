@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navi{
+            background-color: blueviolet;
+            padding: 10px;
+
+
+        }
+        .allbutton{
+            align-items: center;
+        }
+        .time{
+            padding: 30px;
+            background-color:brown;
+            border: 20px;
+            margin:10px 900px 700px 10px;
+
+        }
+
+    </style>
+   <nav class="navi">
+    <div class="allbutton">
+    <input type="button" value="Home"  id="homebutton">
+    <input type="button" value="youtube"  id="youtube">
+    </div>
+   </nav>
+   <div >
+        <input class="buttons" id="red" type="button" value="red">
+        <input class="buttons" id="green" type="button" value="green">
+        <input class="buttons" id="black" type="button" value="black">
+        <input class="buttons" id="grey" type="button" value="gray">
+        
+    </div>
+        <div class="time"id="hello"></div>
+    <script>
+        const butt=document.querySelectorAll('.buttons');
+        const body= document.querySelector('body');
+        butt.forEach(function(e){
+            e.addEventListener('click',function(a){
+                if(a.target.id==='grey'){
+                    body.style.backgroundColor=a.target.id;
+                }
+                if(a.target.id==='green'){
+                    body.style.backgroundColor=a.target.id;
+                }
+                if(a.target.id==='red'){
+                    body.style.backgroundColor=a.target.id;
+                }
+                if(a.target.id==='black'){
+                    body.style.backgroundColor=a.target.id;
+                }
+            })
+        })
+        
+        
+    </script>
+</body>
+</html>
